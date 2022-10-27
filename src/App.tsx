@@ -1,11 +1,13 @@
-import { Button } from "./components/Button";
+import { ShoppingList } from "./components/ShoppingList";
 
 function App() {
+  const prodLimpeza = ["Vassoura", "Detergente", "Amacianete"];
+  const prodFruteira = ["Cenoura", "Beterraba", "Alface"];
+
   return (
     <>
-      <Button text="Texto 01" />
-      <Button text="Texto 02" />
-      <Button text="Texto 03" />
+      <ShoppingList title="Lista de produtos de limpeza" itens={prodLimpeza} />
+      <ShoppingList title="Lista da Fruteira" itens={prodFruteira} />
     </>
   );
 }
