@@ -1,11 +1,11 @@
-type SquareProps = {
-  value: number;
-};
+import { useState } from "react";
 
-export function Square(props: SquareProps) {
+export function Square() {
+  const [value, setValue] = useState("");
+
   return (
-    <button className="square" onClick={() => console.log("click")}>
-      {props.value}
+    <button className="square" onClick={() => setValue("X")}>
+      {value}
     </button>
   );
 }
