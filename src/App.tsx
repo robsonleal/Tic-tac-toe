@@ -1,15 +1,7 @@
-import { ShoppingList } from "./components/ShoppingList";
+import { Game } from "./components/Game";
 
 function App() {
-  const prodLimpeza = ["Vassoura", "Detergente", "Amacianete"];
-  const prodFruteira = ["Cenoura", "Beterraba", "Alface"];
-
-  return (
-    <>
-      <ShoppingList title="Lista de produtos de limpeza" itens={prodLimpeza} />
-      <ShoppingList title="Lista da Fruteira" itens={prodFruteira} />
-    </>
-  );
+  return <Game />;
 }
 
 export default App;
